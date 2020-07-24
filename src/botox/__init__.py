@@ -1,9 +1,9 @@
 import sys
 import struct
 
-import architecture
-from elf import ELF
-from exceptions import BotoxException
+import botox.architecture as architecture
+from botox.elf import ELF
+from botox.exceptions import BotoxException
 
 class Botox(object):
 
