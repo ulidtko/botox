@@ -841,8 +841,8 @@ class ELF(object):
         if size is None:
             while True:
                 chunk = self.read(offset+i, block_size)
-                if "\x00" in chunk:
-                    data += chunk.split("\x00")[0]
+                if b"\x00" in chunk:
+                    data += chunk.split(b"\x00")[0]
                     break
                 elif not chunk:
                     break
